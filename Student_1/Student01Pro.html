@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Start HTML-->
+<html lang="en">
+
+<head>
+    <!-- Start head of html -->
+    <div class="logo">
+        <img src="./logo.png" />
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="bar">
+        <ul class="nav" id="barlink">
+            <li class="home"><a href="../Student_2/Home/home.html">&nbsp;Home&nbsp;</a></li>
+            <li><a href="../Student_4/Extra_Page/aboutus.html">About Us&nbsp;</a></li>
+            <li><a href="../Student_4/Thumbnail_Images/ourservices.html">Our Services&nbsp;</a></li>
+            <li><a href="../Student_1/Student01Pro.html">Courses&nbsp;</a></li>
+            <li><a href="../Student_3/Quiz/Quiz.html">Quiz&nbsp;</a></li>
+            <li><a href="../Student_4/SVG_Diagram/sitemap.html">Sitemap&nbsp;</a></li>
+            <li><a href="../Student_3/Student_Details/sdetails.html">Developers</a></li>
+        </ul>
+    </div>
+    <title>
+        Buy Products
+    </title>
+    <link rel="StyleSheet" type="text/css" href="Student01.css">
+    <link rel="JavaScriptSheet" href="Student01.js">
+</head>
+
+<body>
+    <!-- Start Body -->
+    <!-- Container of Products-->
+    <div class="container">
+        <h1 class="h1b">
+            IT Courses
+        </h1>
+        <div class="product" id="Product01">
+            <img src="Java.png" alt="HCL" height="200" width="250">
+            Java <br>
+            &pound;12
+        </div>
+        <div class="product" id="Product02">
+            <img src="python.jpeg" alt="Cisco" height="200" width="250">
+            Python <br>
+            &pound;15
+        </div>
+        <div class="product" id="Product03">
+            <img src="microsoft.png" alt="Microsoft" height="200" width="250">
+            Microsoft Office <br>
+            &pound;18
+        </div>
+        <div class="product" id="Product04">
+            <img src="html.png" alt="Coursera" height="200" width="250">
+            HTML <br>
+            &pound;10
+        </div>
+    </div>
+    <div class="container">
+        <!-- Container of Collobrated Companies -->
+        <h1 class="h1b">
+            Collobrated Companies
+        </h1>
+        <div class="product" id="Product011">
+            <img src="Hcl.png" alt="HCL" height="200" width="250"> <!-- Input image -->
+            HCL <br>
+            <a href="https://www.hclsrilanka.com"> Click here </a>
+        </div>
+        <div class="product" id="Product021">
+            <img src="Cisco.png" alt="Cisco" height="200" width="250">
+            Cisco <br>
+            <a href="https://www.Cisco.com"> Click here </a>
+        </div>
+        <div class="product" id="Product031">
+            <img src="micro.jpeg" alt="Microsoft" height="200" width="250">
+            Microsoft <br>
+            <a href="https://www.microsoft.com"> Click here </a>
+        </div>
+        <div class="product" id="Product041">
+            <img src="Coursera.png" alt="Coursera" height="200" width="250">
+            Coursera <br>
+            <a href="https://www.Coursera.org"> Click here </a>
+        </div>
+    </div>
+    <!-- Start form to buy products to oder with invoice  -->
+    <form class="form" name="order" id="order" onreset="resetOrder();">
+        <Fieldset>
+            Enter Name :
+            <input type="text" name="ename" id="ename" placeholder="Enter Your Name"> <br>
+            E-Mail Address :
+            <input type="text" name="email" id="email" placeholder="Enter Your E-Mail Address"> <br>
+            Companies Options :
+            <!-- Select options -->
+            <select name="coursesOptions" id="coursesOptions" onchange="checkOptions(this.form);">
+                <option value="none"> Select an option </option>
+                <option value="java"> java </option>
+                <option value="python"> python </option>
+                <option value="Microsoft"> Microsoft </option>
+                <option value="HTML"> HTML </option>
+            </select> <br>
+            Duration Options :
+            <input type="radio" name="duration" id="doptions" value="12 Months" onchange="(this.value)"><label
+                for=" 12months"> 12 Months ; </label>
+            <input type="radio" name="duration" id="doptions" value="06 Months"
+                onchange="displayBouquet(this.value)"><label for="06months"> 06 Months ; </label>
+            <input type="radio" name="duration" id="doptions" value="03 Months"
+                onchange="displayBouquet(this.value)"><label for="03months"> 03 Months.</label> <br><br>
+            <input type="button" value="Place your Details" form="term" value="submit" onclick="showdiv()">
+            <input type="reset" value="Clear" style="margin-left: 10px;">
+        </Fieldset>
+    </form>
+    <br>
+    <br>
+    <!-- Invoice details output display -->
+    <fieldset id="invoice">
+        <legend>Invoice Details : </legend>
+        <span id="Name"></span><br>
+        <span id="Email"></span><br>
+        <span id="TelNo"></span><br>
+        <span id="Subject"></span><br>
+        <span id="Details"></span><br>
+        <div>
+            <!-- Buttons -->
+            <input class="button" type="reset" value="Edit">
+            <input class="button" type="submit" value="Order">
+        </div>
+    </fieldset>
+    Page developer : Mohanaranjan
+</body> <!-- End of Body-->
+
+</html> <!-- End of HTML -->

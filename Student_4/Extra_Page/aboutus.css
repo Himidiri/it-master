@@ -1,0 +1,403 @@
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body {
+   background-color: #181616;
+}
+
+h1 {
+   font-family: Arial, sans-serif;
+   letter-spacing: 0.5rem;
+   color: white;
+   text-align: center;
+   font-size: 45px;
+   text-shadow: 2px 2px #2c2c2c;
+   margin-top: 4%;
+}
+
+/* Navigation Bar */
+.nav {
+   text-align: right;
+   font-size: 25px;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+}
+
+.logo img {
+   position: absolute;
+   margin-top: 7px;
+   margin-left: 25px;
+   width: 16%;
+   height: 8%;
+}
+
+.home a:link {
+   font-weight: bold;
+   background-color: #7e0b0b;
+   padding: 5px;
+   border-radius: 7px;
+}
+
+.bar {
+   overflow: hidden;
+   background-color: black;
+   width: 100%;
+   display: block;
+   padding: 25px 15px;
+}
+
+.bar a:link {
+   color: white;
+   font-size: 20px;
+   font-family: monospace;
+   text-decoration: none;
+}
+
+.bar a:visited {
+   color: white;
+   text-decoration: none;
+}
+
+.bar a:hover {
+   color: #7a8690;
+}
+
+.bar a.active {
+   color: green;
+}
+
+#barlink li {
+   display: inline;
+   margin-right: 30px;
+}
+
+/* About Us */
+.btn {
+   width: 45%;
+}
+
+.about {
+   width: 85%;
+   margin: 0 auto;
+   background-color: #464545;
+   height: 650px;
+   overflow: hidden;
+   border-radius: 25px;
+}
+
+.about img {
+   width: 50%;
+   float: left;
+   margin: 60px 50px 0 30px;
+   padding: 10px;
+}
+
+.text {
+   margin: 30px 50px 0 30px;
+   padding: 10px;
+   color: white;
+}
+
+button {
+   margin-top: 20px;
+   margin-left: 10px;
+}
+
+.about h3 {
+   font-family: "Trebuchet MS", sans-serif;
+   font-size: 25px;
+   text-transform: capitalize;
+   text-align: left;
+   letter-spacing: 1px;
+   line-height: 1.5em;
+}
+
+.about p {
+   font-family: Arial, sans-serif;
+   text-align: justify;
+   font-size: 18px;
+   letter-spacing: 1px;
+   line-height: 1.5em;
+}
+
+.button a:link,
+a:visited {
+   background-color: #7e0b0b;
+   color: white;
+   font-family: monospace;
+   font-size: 18px;
+   padding: 10px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   border-radius: 9px;
+}
+
+.button a:hover {
+   color: #fdff79;
+}
+
+/* Awards */
+.awtxt {
+   color: rgb(255, 255, 255);
+   font-family: Arial, sans-serif;
+   text-align: center;
+   font-size: 18px;
+   letter-spacing: 1px;
+   line-height: 1.5em;
+   text-transform: capitalize;
+}
+
+.awards {
+   background-color: #fffffff5;
+   margin-top: 3%;
+   margin-left: 7%;
+   margin-right: 7%;
+   border-radius: 9px;
+   margin-bottom: 5%;
+}
+
+.awards li img {
+   height: 150px;
+   width: 300px;
+   margin-right: 3%;
+   margin-left: 6%;
+   padding-top: 18px;
+   padding-bottom: 18px;
+}
+
+.awards li {
+   display: inline;
+}
+
+/* Teachers */
+.heading {
+   font-size: 40px;
+   color: #ffffff;
+   text-align: center;
+   padding: 0 1rem;
+   letter-spacing: 0.2rem;
+   font-family: Arial, sans-serif;
+   text-transform: capitalize;
+}
+
+.teacher .tbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.teacher .tbox .card {
+   padding: 2rem;
+   margin: 2rem;
+   background: #8d8d8d66;
+   text-align: center;
+   width: 28rem;
+}
+
+.teacher .tbox .card img {
+   height: 25rem;
+   width: 100%;
+   object-fit: cover;
+}
+
+.teacher .tbox .card h3 {
+   font-family: Verdana, sans-serif;
+   letter-spacing: 1px;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 0.3rem 0;
+}
+
+.teacher .tbox .card p {
+   font-family: Helvetica, sans-serif;
+   font-size: 1.7rem;
+   color: #ffffff;
+   line-height: 1.5em;
+}
+
+/* Review */
+.boxrow {
+   margin-bottom: 50px;
+}
+
+.review .boxrow {
+   display: flex;
+   justify-content: center;
+   padding-top: 2rem;
+}
+
+.review .boxrow .box {
+   width: 28rem;
+   padding-bottom: 1rem;
+   text-align: center;
+   background: #d3d3d33f;
+   margin: 4rem 2rem;
+}
+
+.review .boxrow .box img {
+   height: 9.5rem;
+   width: 9.5rem;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-top: -4rem;
+}
+
+.review .boxrow .box h3 {
+   font-family: Helvetica, sans-serif;
+   font-size: 2.3rem;
+   color: #ffffff;
+   padding: 0 0.5rem;
+}
+
+.review .boxrow .box p {
+   font-family: Helvetica, sans-serif;
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 1.6rem;
+   color: #fffdfd;
+   padding: 0 2.4rem;
+   line-height: 1.5em;
+   letter-spacing: 1.4px;
+}
+
+.review .boxrow .box .stars i {
+   font-size: 1.6rem;
+   color: rgb(200, 3, 3);
+   padding: 1.3rem 0.1rem;
+}
+
+/* Big Footer */
+.tab2 i {
+   font-size: 30px;
+   float: left;
+   color: white;
+   padding-right: 10px;
+   padding-left: 35px;
+   margin-top: 20px;
+}
+
+.tb1 li {
+   display: block;
+   padding-left: 30%;
+   text-decoration: none;
+   font-family: "Trebuchet MS", sans-serif;
+   line-height: 2em;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.tb2 li {
+   display: block;
+   text-decoration: none;
+   font-family: "Trebuchet MS", sans-serif;
+   line-height: 2em;
+   letter-spacing: 1px;
+}
+
+.com {
+   display: block;
+   text-decoration: none;
+   padding-left: 30%;
+}
+
+.fot a {
+   text-decoration: none;
+   color: white;
+}
+
+.fot th {
+   text-align: justify;
+   font-size: 20px;
+   padding-top: 35px;
+}
+
+.fot td {
+   font-size: 17px;
+}
+
+.fot ol {
+   padding: 0;
+}
+
+.fot li a:hover {
+   color: red;
+}
+
+.fot {
+   background-color: #2e2e2eab;
+}
+
+.tdimg {
+   width: 30%;
+}
+
+.tdimg img {
+   width: 70%;
+   margin-top: -10%;
+}
+
+.itm {
+   font-family: "Trebuchet MS", sans-serif;
+   font-size: 25px;
+   background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+}
+
+/* Footer */
+.footer-bottom {
+   font: 15px Arial, sans-serif;
+   background: black;
+   color: #ffffff;
+   height: 40px;
+   width: 100%;
+   text-align: center;
+   bottom: 0;
+   left: 0;
+   padding-top: 12px;
+}
+
+a.footerlast {
+   font: 15px Arial, sans-serif;
+   color: #ff0000;
+   letter-spacing: 1px;
+}
+
+a.footerlast:hover {
+   color: #3cfdfa;
+}
+
+/* scroll button */
+#scroll {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 30px;
+   z-index: 99;
+   border: none;
+   outline: none;
+   background: #7e0b0b;
+   color: white;
+   cursor: pointer;
+   padding: 15px;
+   border-radius: 10px;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+#scroll:hover {
+   background-color: rgb(102, 102, 102);
+   color: #ff3434;
+}

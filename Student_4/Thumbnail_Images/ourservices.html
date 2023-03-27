@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <title>Thumbnail images</title>
+   <!-- External Style Sheet -->
+   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg tx">
+
+   <!-- logo -->
+   <div class="logo">
+      <img src="../images/logo.png" alt="Logo" />
+   </div>
+
+   <!-- navigation bar -->
+   <div class="bar">
+      <ul class="nav" id="barlink">
+         <li class="home"><a href="../../Student_2/Home/home.html">&nbsp;Home&nbsp;</a></li>
+         <li><a href="../Extra_Page/aboutus.html">About Us&nbsp;</a></li>
+         <li><a href="../Thumbnail_Images/ourservices.html">Our Services&nbsp;</a></li>
+         <li><a href="../../Student_1/Student01Pro.html">Courses&nbsp;</a></li>
+         <li><a href="../../Student_3/Quiz/Quiz.html">Quiz&nbsp;</a></li>
+         <li><a href="../SVG_Diagram/sitemap.html">Sitemap&nbsp;</a></li>
+         <li><a href="../../Student_3/Student_Details/sdetails.html">Developers</a></li>
+      </ul>
+   </div>
+
+   <!-- Title -->
+   <h1>Our Services</h1>
+
+   <div class="box">
+      <div class="ps">
+         <a href="#info1"><img id="thumb1" src="../images/teaching.jpg" alt="Friendly Teacher" /></a>
+         <a href="#info2"><img id="thumb2" src="../images/online_learning.png" alt="Online Learning" /></a>
+         <a href="#info3"><img id="thumb3" src="../images/students.jpg" alt="Our Certificates" /></a>
+         <a href="#info4"><img id="thumb4" src="../images/computer_lab.jpg" alt="Computer Lab" /></a>
+         <a href="#info5"><img id="thumb5" src="../images/library.jpg" alt="Library" /></a>
+      </div>
+      <div class="container">
+         <figure class="pic">
+            <img id="mainImg" src="../images/teaching.jpg" alt="Friendly Teacher" />
+         </figure>
+      </div>
+      <div>
+         <div class="section" id="info1">
+            <span class="title">Staff</span>
+            <span class="border"></span>
+            <p>
+               Our institute is run by friendly, professional staff who have experience with teaching and learning in a
+               culturally inclusive environment.
+            </p>
+         </div>
+         <div class="section" id="info2">
+            <span class="title">Online Learning</span>
+            <span class="border"></span>
+            <p>
+               All students can access study and administrative tools through IT Master and, depending on the course,
+               can study all or part of their degree online.
+            </p>
+         </div>
+         <div class="section" id="info3">
+            <span class="title">Our Certificate</span>
+            <span class="border"></span>
+            <p>
+               Many industry-recognized certifications can be obtained through IT Master. Our courses have been
+               developed by top IT organizations like Microsoft, and The Computing Technology Industry Association. We
+               work with the best to
+               bring you the best.
+            </p>
+         </div>
+         <div class="section" id="info4">
+            <span class="title">Our Lab Survices</span>
+            <span class="border"></span>
+            <p>
+               The laboratories at our institute have a huge quantity of high-quality computer equipment. Our labs will
+               assist you in expanding your knowledge and achieving your objectives.
+            </p>
+         </div>
+         <div class="section" id="info5">
+            <span class="title">Our Library Survices</span>
+            <span class="border"></span>
+            <p>
+               Our institute’s libraries are brimming with physical and digital resources to help you achieve your
+               goals. The library contains more online resources, including ebooks, e-journals, and videos. Our physical
+               collection is
+               slightly smaller resources.
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!-- Color Change Options -->
+   <div class="forms">
+      <form>
+         <label for="colour">Change Background Color :</label>
+         <select class="selectcolor" id="colour" name="BgColor" onchange="changebgcolor(this)">
+            <option value="#181616">Dark Gray</option>
+            <option value="#AAAAAA">Light Gray</option>
+            <option value="#00A29D">Sea Green</option>
+            <option value="#430D45">Dark Purple</option>
+            <option value="#C87E06">Orange</option>
+         </select>
+
+         <label for="color">&nbsp;&nbsp;&nbsp;Change Text Color :</label>
+         <select class="text" id="color" name="TxtColor" onchange="changetxtcolor(this)">
+            <option value="#ffffff">White</option>
+            <option value="#000000">Black</option>
+            <option value="#CDCDCD">Gray</option>
+            <option value="#eee800">Yellow</option>
+            <option value="#7CE7EE">Light Blue</option>
+         </select>
+      </form>
+   </div>
+
+   <!--Developer Details-->
+   <div class="footer-bottom">&copy; IT Master | Designed by <a href="../Page_Editor/editor.html"
+         class="footerlast">Himidiri Himakanika</a></div>
+
+   <!-- Javascript  -->
+   <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+
+body{
+   background-color: #181616;
+   
+}
+
+.nav {
+    text-align: right;
+    font-size: 25px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+ }
+ 
+ .logo img {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 25px;
+    width: 16%;
+    height: 8%;
+ }
+ 
+ .home a:link {
+    font-weight: bold;
+    background-color: #7e0b0b;
+    padding: 5px;
+    border-radius: 7px;
+ }
+ 
+ .bar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    display: block;
+    padding: 25px 15px;
+ }
+ 
+ .bar a:link {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+ }
+ 
+ .bar a:visited {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ .bar a:hover {
+    color: #7a8690;
+ }
+ 
+ .bar a.active {
+    color: green;
+ }
+ 
+ #barlink li {
+    display: inline;
+    margin-right: 30px;
+ }
+
+
+.content{
+
+   margin-left: 5%;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.content h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #8e0f0f;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: rgba(255, 255, 255, 0.096);
+    color: black;
+}
+
+.content span{
+    color: #a01010;
+    font-size: 65px;
+}
+
+.img {
+    position: absolute;
+    right: 0%;
+    right: 1%;
+  margin-right: 4%;
+  margin-bottom: 10%;
+
+ }
+ 

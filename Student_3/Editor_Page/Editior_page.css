@@ -1,0 +1,121 @@
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(12121.jpg);
+    object-fit: cover;
+    background-position: center;
+}
+  
+.nav {
+    text-align: right;
+    font-size: 25px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+  
+.logo img {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 25px;
+    width: 16%;
+    height: 8%;
+}
+  
+.home a:link {
+    font-weight: bold;
+    background-color:#7e0b0b;
+    padding: 5px;
+    border-radius: 7px;
+}
+  
+.bar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    display: block;
+    padding: 25px 15px;
+}
+  
+.bar a:link {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+}
+  
+.bar a:visited {
+    color: white;
+    text-decoration: none;
+}
+  
+.bar a:hover {
+    color: #7a8690;
+}
+  
+.bar a.active {
+    color: green;
+}
+  
+#barlink li {
+    display: inline;
+    margin-right: 30px;
+}
+  
+.container {
+    width: 611px;
+    background: rgba(209, 167, 167, 0.4);
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    color: white;
+    border-radius: 25px;
+}
+ 
+.img {
+    border-radius: 100%;
+    width: 170px;
+    height: 190px;
+    background-size: cover;
+    object-fit: cover;
+}
+ 
+h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+ 
+h3 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+ 
+h4 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+
+ul {
+    text-align: justify;
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman';
+}
+ 
+
+
+   

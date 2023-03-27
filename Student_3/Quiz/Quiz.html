@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Online Quiz </title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <script type="text/javascript" src="quiz.js"> </script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="../Quiz/logo.png" alt="logo">
+    </div>
+
+    <div class="bar">
+        <ul class="nav" id="barlink">
+            <li class="home"><a href="../../Student_2/Home/home.html">&nbsp;Home&nbsp;</a></li>
+            <li><a href="../../Student_4/Extra_Page/aboutus.html">About Us&nbsp;</a></li>
+            <li><a href="../../Student_4/Thumbnail_Images/ourservices.html">Our Services&nbsp;</a></li>
+            <li><a href="../../Student_1/Student01Pro.html">Courses&nbsp;</a></li>
+            <li><a href="../Quiz/Quiz.html">Quiz&nbsp;</a></li>
+            <li><a href="../../Student_4/SVG_Diagram/sitemap.html">Sitemap&nbsp;</a></li>
+            <li><a href="../Student_Details/sdetails.html">Developers</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-title">
+        <h1> Online Quiz </h1>
+    </div>
+
+    <form>
+        <div id="time">
+            <span id="timeRemaning"> Time Remaining : </span> <span id="count"> 1.00 </span>
+        </div>
+    </form>
+
+    <button class="button" id="startQuiz" onclick="openqz(); qzz(); startQuizFunction();"> <span> Start Quiz </span>
+    </button>
+
+    <div style="display: none;" id="qzz">
+        <div class="pro">
+            <div class="container">
+                <h4> Q1. A ___ identifies a location or a selection of text that your name and identify for future
+                    reference.</h4>
+                <input type="radio" name="question1"> (A) Footer <br>
+                <input type="radio" name="question1" id="correct1"> (B) Bookmark <br>
+                <input type="radio" name="question1"> (C) Header <br>
+                <input type="radio" name="question1"> (D) Page number <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="1stQ">
+                <label style="font-size: 20px;" id="1stQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q2. The valid format of MS Word is _ </h4>
+                <input type="radio" name="question2"> (A) .exe <br>
+                <input type="radio" name="question2" id="correct2"> (B) .doc <br>
+                <input type="radio" name="question2"> (C) .png <br>
+                <input type="radio" name="question2"> (D) .jpeg <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="2ndQ">
+                <label style="font-size: 20px;" id="2ndQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q3. MS Word is __ software. </h4>
+                <input type="radio" name="question3"> (A) Web browser <br>
+                <input type="radio" name="question3" id="correct3"> (B) Word processing <br>
+                <input type="radio" name="question3"> (C) Operating system <br>
+                <input type="radio" name="question3"> (D) Antivirus <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="3rdQ">
+                <label style="font-size: 20px;" id="3rdQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q4. What would be a correct formula for sum in excel? </h4>
+                <input type="radio" name="question4" id="correct4"> (A). = SUM (B3:B9) <br>
+                <input type="radio" name="question4"> (B). = SUM B3 + B9 <br>
+                <input type="radio" name="question4"> (C). SUM (B3:B9) <br>
+                <input type="radio" name="question4"> (D). = ADD (B3:B9) <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="4thQ">
+                <label style="font-size: 20px;" id="4thQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q5. Which one is not a Function in MS Excel? </h4>
+                <input type="radio" name="question5"> (A). SUM <br>
+                <input type="radio" name="question5" id="correct5"> (B). AVG <br>
+                <input type="radio" name="question5"> (C). MIN <br>
+                <input type="radio" name="question5"> (D). MAX <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="5thQ">
+                <label style="font-size: 20px;" id="5thQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q6. Which function in Excel checks whether a condition is true or not? </h4>
+                <input type="radio" name="question6"> (A). SUM <br>
+                <input type="radio" name="question6"> (B). COUNT <br>
+                <input type="radio" name="question6" id="correct6"> (C). IF <br>
+                <input type="radio" name="question6"> (D). AVERAGE <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="6thQ">
+                <label style="font-size: 20px;" id="6thQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q7. What type of chart is useful for comparing parts of a whole? </h4>
+                <input type="radio" name="question7" id="correct7"> (A). Pie Chart <br>
+                <input type="radio" name="question7"> (B). Column Chart <br>
+                <input type="radio" name="question7"> (C). Line Chart <br>
+                <input type="radio" name="question7"> (D). Dot Chart <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="7thQ">
+                <label style="font-size: 20px;" id="7thQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q8. Times new Roman, Cambria, Arial are the example of ___ </h4>
+                <input type="radio" name="question8" id="correct8"> (A). Font face <br>
+                <input type="radio" name="question8"> (B). Clipart <br>
+                <input type="radio" name="question8"> (C). SmartArt <br>
+                <input type="radio" name="question8"> (D). Themes <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="8thQ">
+                <label style="font-size: 20px;" id="8thQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q9. The slide that is used to introduce a topic and set the tone for the presentation is called the
+                </h4>
+                <input type="radio" name="question9" id="correct9"> (A). Title slide <br>
+                <input type="radio" name="question9"> (B). Bullet slide <br>
+                <input type="radio" name="question9"> (C). Table slide <br>
+                <input type="radio" name="question9"> (D). Table slide <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="9thQ">
+                <label style="font-size: 20px;" id="9thQAnswer"> </label>
+            </div>
+
+            <div class="container">
+                <h4> Q10. Which feature is not in MS PowerPoint? </h4>
+                <input type="radio" name="question10" id="correct10"> (A). Scan a virus <br>
+                <input type="radio" name="question10"> (B). Zoom <br>
+                <input type="radio" name="question10"> (C). Background Colour <br>
+                <input type="radio" name="question10"> (D). Slide Show <br>
+            </div>
+
+            <div class="container" style="height :0px; text-align: center;" id="10thQ">
+                <label style="font-size: 20px;" id="10thQAnswer"> </label>
+            </div>
+
+        </div>
+        <br>
+        <button class="buttonSubmit" type="submit" id="submitbutton"
+            onclick="result(); stopCounter(); hideSubmitButton()"> <span> Submit </span> </button>
+
+        <div class="score">
+            <h2 id="marks"> </h2>
+        </div>
+        <br>
+        <div>
+            <h2 id="tuk"> </h2>
+        </div>
+        <footer id="editor">
+            <a href="../Editor_Page/Editor_page.html"> Page Editor - Sasmika </a>
+        </footer>
+    </div>
+</body>
+
+</html>

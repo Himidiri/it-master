@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf8">
+    <link rel="StyleSheet" href="Student02JS.js">
+    <style>
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+        }
+
+        .query {
+            align-items: center;
+            padding-left: 650px;
+            margin-top: 220px;
+        }
+
+        .querya {
+            align-items: center;
+            padding-left: 650px;
+            padding-bottom: 300px;
+
+        }
+
+        .border {
+            border: black solid 1px;
+        }
+
+        .body {
+            background-color: #181616;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            letter-spacing: 0.5rem;
+            color: white;
+            text-align: center;
+            font-size: 45px;
+            text-shadow: 2px 2px #2c2c2c;
+            margin-top: 5%;
+        }
+
+
+        .nav {
+            text-align: right;
+            font-size: 25px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 7px;
+            margin-left: 25px;
+            width: 16%;
+            height: 8%;
+        }
+
+        .home a:link {
+            font-weight: bold;
+            background-color: #7e0b0b;
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        .bar {
+            overflow: hidden;
+            background-color: black;
+            width: 100%;
+            display: block;
+            padding: 25px 15px;
+        }
+
+        .bar a:link {
+            color: white;
+            font-size: 20px;
+            font-family: monospace;
+            text-decoration: none;
+        }
+
+        .bar a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        .bar a:hover {
+            color: #7a8690;
+        }
+
+        .bar a.active {
+            color: green;
+        }
+
+        #barlink li {
+            display: inline;
+            margin-right: 30px;
+        }
+    </style>
+    <script>
+        function summary(forms) {
+            document.getElementById("u_name").innerHTML = form.Name.value;
+            document.getElementById("u_email").innerHTML = form.Email.value;
+            document.getElementById("summary").style.display = "block";
+        }
+
+        function edit(b) {
+            document.getElementById("summary").style.display = "none"
+            document.getElementById("queryform").style.display = "block"
+        }
+
+        function querychecker(form) {
+
+            let flag = true;
+            const values = []
+            if (form.Name.value == "") {
+                alert("Name input is required")
+                flag = false
+            }
+            else {
+                if (form.Email.value == "") {
+                    alert("Email input is required")
+                    flag = false
+                }
+            }
+            let count = 0
+            for (leti = 0; i < form.length; i++) {
+                if (form[i].checked) {
+                    values[values.length] = form[i].value;
+                    count += 1
+                }
+
+                if (count == o) {
+                    alert("details input is required")
+                    flag = false
+                }
+                if (flag == true) {
+                    let var1 = document.getElementById("queryform");
+                    var1.style("display") = "none";
+                    summary(form);
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body style="background-image:url(study.jpg); background-repeat: no-repeat; object-fit:cover; background-size: cover;">
+    <div class="bar">
+        <ul class="nav" id="barlink">
+            <li class="home"><a href="../Home/home.html">&nbsp;Home&nbsp;</a></li>
+            <li><a href="../../Student_4/Extra_Page/aboutus.html">About Us&nbsp;</a></li>
+            <li><a href="../../Student_4/Thumbnail_Images/ourservices.html">Our Services&nbsp;</a></li>
+            <li><a href="../../Student_1/Student01Pro.html">Courses&nbsp;</a></li>
+            <li><a href="../../Student_3/Quiz/Quiz.html">Quiz&nbsp;</a></li>
+            <li><a href="../../Student_4/SVG_Diagram/sitemap.html">Sitemap&nbsp;</a></li>
+            <li><a href="../../Student_3/Student_Details/sdetails.html">Developers</a></li>
+        </ul>
+    </div>
+    <div class="border">
+        <div class="query" id="queryform">
+            <form action="mailto:srakshaagar@gmail.com" id="mail" method="post">
+                <p style="font-size: 20px;"> <b> Query form </b> </p>
+                <label for="name">Name:</label>
+                <input type='text' name='name' id="name" placeholder="name" />
+                <br>
+                <br>
+                <label for="email">Email :</label>
+
+                <input type="email" name="mail" id="mail" placeholder="email">
+                <br>
+                <br>
+                <label for="subject"> Subject:</label>
+
+                <select id="subjects" name="sb">
+                    <option value="Delivery"> Delivery</option>
+                    <option value="seller">Seller</option>
+                    <option value="price">Price</option>
+                </select>
+                <br>
+                <br>
+                <label for="details">Details:</label>
+                <textarea id='detail' name='details' rows="2" cols="20"></textarea>
+                <br>
+                <br>
+                <input type="button" value="View Query" onclick="querychecker(this.form)">
+            </form>
+        </div>
+        <div class="querya" id="summary">
+            <p id="summayheader">Summary</p>
+            <p id="u_name"></p>
+            <p id="u_email"></p>
+            <input type="button" value="Edit" onclick="edit(this.form)">
+            <input type="submit" value="Submit" form="mail">
+        </div>
+    </div>
+</body>
+
+</html>

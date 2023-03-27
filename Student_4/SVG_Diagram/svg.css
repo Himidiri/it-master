@@ -1,0 +1,154 @@
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 90%;
+   overflow-x: hidden;
+}
+
+body {
+   background-color: #181616;
+}
+
+/* Navigation Bar */
+.nav {
+   text-align: right;
+   font-size: 25px;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+}
+
+.logo img {
+   position: absolute;
+   margin-top: 7px;
+   margin-left: 25px;
+   width: 16%;
+   height: 8%;
+}
+
+.home a:link {
+   font-weight: bold;
+   background-color: #7e0b0b;
+   padding: 5px;
+   border-radius: 7px;
+}
+
+.bar {
+   overflow: hidden;
+   background-color: black;
+   width: 100%;
+   display: block;
+   padding: 25px 15px;
+}
+
+.bar a:link {
+   color: white;
+   font-size: 20px;
+   font-family: monospace;
+   text-decoration: none;
+}
+
+.bar a:visited {
+   color: white;
+   text-decoration: none;
+}
+
+.bar a:hover {
+   color: #7a8690;
+}
+
+.bar a.active {
+   color: green;
+}
+
+#barlink li {
+   display: inline;
+   margin-right: 30px;
+}
+
+/* Title */
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   text-align: center;
+   font-size: 45px;
+   text-shadow: 2px 2px #2c2c2c;
+}
+
+/* SVG Map */
+svg {
+   height: 580px;
+   width: 100%;
+   padding-left: 15%;
+}
+
+#map g text {
+   fill: #d6d6d6;
+   font-family: Arial;
+   font-weight: bold;
+}
+
+#map g rect {
+   fill: none;
+   stroke: #04dcb6;
+   stroke-width: 3;
+}
+
+#map g ellipse {
+   fill: none;
+   stroke: #ff0083;
+   stroke-width: 3;
+}
+
+#map g path {
+   stroke: #ffff00;
+   stroke-width: 2;
+   fill: none;
+}
+
+#map g line {
+   stroke: #ffff00;
+   stroke-width: 2;
+   fill: none;
+}
+
+#map g:hover text {
+   fill: #000000;
+}
+
+#map g:hover rect {
+   fill: #aaaaaa;
+   stroke: none;
+}
+
+#map g:hover ellipse {
+   fill: #aaaaaa;
+   stroke: none;
+}
+
+/* Footer */
+.footer-bottom {
+   font: 15px Arial, sans-serif;
+   background: black;
+   color: #ffffff;
+   height: 40px;
+   width: 100%;
+   text-align: center;
+   bottom: 0;
+   left: 0;
+   padding-top: 12px;
+}
+
+.footerlast {
+   font: 15px Arial, sans-serif;
+   color: #ff0000;
+   letter-spacing: 1px;
+}
+
+.footerlast:hover {
+   color: #3cfdfa;
+}
